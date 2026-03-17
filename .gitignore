@@ -1,3 +1,6 @@
 /target
 node_modules/
 package-lock.json
+
+# Keep wasm pkg files tracked (wasm-pack generates a .gitignore that blocks them)
+!frontend/pkg/

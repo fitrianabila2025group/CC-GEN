@@ -1,0 +1,17 @@
+{
+  "name": "ccgen-wasm",
+  "type": "module",
+  "description": "WebAssembly bindings for CC-GEN",
+  "version": "2.0.0",
+  "license": "MIT",
+  "files": [
+    "ccgen_bg.wasm",
+    "ccgen.js",
+    "ccgen.d.ts"
+  ],
+  "main": "ccgen.js",
+  "types": "ccgen.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

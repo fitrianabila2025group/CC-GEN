@@ -81,29 +81,334 @@
     }
 }
 
-/* Mobile overrides */
+/* ═══ Mobile overrides (< 768px) ═══ */
 @media (max-width: 767px) {
     .main-grid {
         grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 12px;
     }
+
     .bottom-panels {
         grid-template-columns: 1fr;
+        padding: 0 10px 10px;
+    }
+
+    /* Header */
+    .app-header {
+        padding: 8px 0;
+    }
+    .header-content {
+        padding: 0 12px;
     }
     .header-title {
         font-size: 18px;
     }
+    .header-logo {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+    .header-version {
+        font-size: 10px;
+        padding: 1px 6px;
+    }
+
+    /* Disclaimer */
+    .disclaimer-banner {
+        padding: 8px 12px;
+        font-size: 11px;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    /* Panels */
+    .glass-panel {
+        border-radius: 12px;
+    }
+    .panel-header {
+        padding: 12px 14px;
+    }
+    .panel-title {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+    .panel-body {
+        padding: 14px;
+    }
+
+    /* Form */
+    .form-group {
+        margin-bottom: 12px;
+    }
+    .form-label {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+    .form-input {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+    .form-select {
+        padding: 9px 12px;
+        font-size: 12px;
+    }
+    .form-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+    }
+
+    /* Presets */
     .quick-presets {
-        flex-wrap: wrap;
+        gap: 4px;
+        margin-bottom: 12px;
     }
     .preset-btn {
         font-size: 11px;
-        padding: 6px 10px;
+        padding: 5px 9px;
     }
+
+    /* Range slider */
+    .range-group {
+        gap: 8px;
+    }
+    .range-value {
+        font-size: 13px;
+        min-width: 40px;
+        padding: 3px 8px;
+    }
+
+    /* Generate button */
+    .btn-generate {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* Output */
+    .output-textarea {
+        min-height: 150px;
+        max-height: 250px;
+        font-size: 11px;
+        padding: 10px;
+    }
+    .output-actions {
+        gap: 6px;
+        margin-top: 10px;
+    }
+    .btn-action {
+        padding: 7px 12px;
+        font-size: 11px;
+    }
+
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+        margin-top: 12px;
+    }
+    .stat-card {
+        padding: 8px 10px;
+    }
+    .stat-label {
+        font-size: 9px;
+    }
+    .stat-value {
+        font-size: 14px;
+    }
+
+    /* Card preview */
+    .card-preview-container {
+        padding: 10px 0;
+    }
+    .card-3d {
+        width: 280px;
+        height: 176px;
+    }
+    .card-face {
+        padding: 16px;
+        border-radius: 12px;
+    }
+    .card-chip {
+        width: 40px;
+        height: 30px;
+    }
+    .card-brand-logo {
+        font-size: 16px;
+    }
+    .card-number-display {
+        font-size: 15px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+    .card-holder-name {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+    .card-holder-label {
+        font-size: 7px;
+    }
+    .card-expiry-value {
+        font-size: 12px;
+    }
+    .card-expiry-label {
+        font-size: 7px;
+    }
+
+    /* Tabs */
     .tab-bar {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        gap: 2px;
+        padding: 3px;
     }
     .tab-bar::-webkit-scrollbar {
         display: none;
+    }
+    .tab-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+        gap: 4px;
+    }
+    .tab-panel-inner {
+        padding: 14px;
+    }
+
+    /* Lookup */
+    .lookup-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+    .lookup-item {
+        padding: 8px 10px;
+    }
+    .lookup-item-label {
+        font-size: 9px;
+    }
+    .lookup-item-value {
+        font-size: 12px;
+    }
+
+    /* History */
+    .history-item {
+        padding: 8px 10px;
+    }
+    .history-number {
+        font-size: 12px;
+    }
+    .history-brand {
+        font-size: 10px;
+    }
+
+    /* Validator */
+    .validation-check {
+        padding: 8px 0;
+        gap: 8px;
+    }
+    .check-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .check-label {
+        font-size: 12px;
+    }
+
+    /* Toast */
+    .toast-container {
+        bottom: 12px;
+        right: 12px;
+        left: 12px;
+    }
+    .toast {
+        padding: 10px 14px;
+        font-size: 12px;
+        min-width: unset;
+        width: 100%;
+    }
+
+    /* Footer */
+    .app-footer {
+        padding: 16px 12px;
+        font-size: 11px;
+    }
+}
+
+/* ═══ Extra small phones (< 360px) ═══ */
+@media (max-width: 359px) {
+    .main-grid {
+        padding: 6px;
+        gap: 8px;
+    }
+    .header-title {
+        font-size: 16px;
+    }
+    .header-left {
+        gap: 8px;
+    }
+    .card-3d {
+        width: 240px;
+        height: 152px;
+    }
+    .card-face {
+        padding: 12px;
+    }
+    .card-chip {
+        width: 32px;
+        height: 24px;
+    }
+    .card-number-display {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    .card-brand-logo {
+        font-size: 14px;
+    }
+    .preset-btn {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+    .form-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4px;
+    }
+    .form-input {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+    }
+    .stat-value {
+        font-size: 12px;
+    }
+    .tab-btn {
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+}
+
+/* ═══ Landscape phones ═══ */
+@media (max-height: 500px) and (orientation: landscape) {
+    .app-header {
+        padding: 4px 0;
+    }
+    .disclaimer-banner {
+        padding: 4px 12px;
+        font-size: 10px;
+    }
+    .card-preview-container {
+        padding: 6px 0;
+    }
+    .card-3d {
+        width: 220px;
+        height: 138px;
+    }
+    .card-face {
+        padding: 10px;
+    }
+    .output-textarea {
+        min-height: 100px;
+        max-height: 200px;
     }
 }

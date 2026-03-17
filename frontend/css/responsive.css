@@ -114,12 +114,16 @@
         padding: 1px 6px;
     }
 
-    /* Disclaimer */
+    /* Disclaimer — show short version on mobile */
     .disclaimer-banner {
-        padding: 8px 12px;
+        padding: 6px 12px;
         font-size: 11px;
-        flex-direction: column;
-        gap: 2px;
+    }
+    .disclaimer-full {
+        display: none;
+    }
+    .disclaimer-short {
+        display: inline;
     }
 
     /* Panels */

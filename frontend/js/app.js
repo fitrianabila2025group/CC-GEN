@@ -97,6 +97,15 @@ const App = {
         const cardLengthInput = document.getElementById('card-length')?.value;
         const cardLength = cardLengthInput ? parseInt(cardLengthInput) : -1;
 
+        // Validate month range (1-12)
+        if (month) {
+            const m = parseInt(month, 10);
+            if (isNaN(m) || m < 1 || m > 12) {
+                UI.showToast('Month must be between 1 and 12', 'error');
+                return;
+            }
+        }
+
         const includeExpiry = true;
         const includeCvv = true;
 
